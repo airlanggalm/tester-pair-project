@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "pair-project",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "javwdtnlceilev",
+    "password": "d8dd8fe26279afec371b859aa0234c66b1caa5a51ea2d140feda0e843f04030d",
+    "database": "d1619a8gqrj5dn",
+    "host": "ec2-34-204-121-199.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

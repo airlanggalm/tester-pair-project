@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <title>Cart</title>
+  <style>
+    body {
+      background-image: url('Savin-NY-Website-Background-Web.jpg');
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">ToyPedia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+            <a class="btn btn-outline-danger mr-2" href="/logout" role="button">Log Out</a>
+      </ul>
+     
+    </div>
+  </nav>
+
+  <style>
+    h2 {text-align: center;}
+    </style>
+  
+  <nav>
+    <<div class="container mb-3 mt-3">
+      <h2 center>Carts</h2><br>
+    <table class="table table-stripped table-bordered">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Color</th>
+            <th scope="col">Company</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+      <% for (let i = 0; i < data.length; i++){ %>
+        <tr>
+              <td><%= data[i].Toy.id %></td>
+              <td><%= data[i].Toy.name %></td>
+              <td><%= data[i].Toy.color %></td>
+              <td><%= data[i].Toy.company %></td>
+              <td><%= data[i].Toy.getPriceRp() %></td>
+              <td>
+                      <button class="btn btn-outline-success badge-pill"><a href="/thanks/<%= data[i].Toy.id %>">Checkout Now!</a></button>
+                      
+                      <button class="btn btn-outline-danger badge-pill"><a href="/toys/delete/<%= data[i].id %>">Remove from Cart</a></button>
+                    </td>
+     <% } %>
+
+    </tbody>
+
+</table>
+</div>
+</nav>
+</body>
+</html>

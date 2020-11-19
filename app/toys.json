@@ -1,0 +1,37 @@
+[
+  {
+    "name": "tamiya",
+    "stock": 83,
+    "color": "blue",
+    "company": "tamiya incorporated",
+    "price": 200000
+  },
+  {
+    "name": "beyblade",
+    "stock": 33,
+    "color": "red",
+    "company": "beyblade incorporated",
+    "price": 100000
+  },
+  {
+    "name": "tamagochi",
+    "stock": 87,
+    "color": "pink",
+    "company": "tamagochi incorporated",
+    "price": 50000
+  },
+  {
+    "name": "crushgear",
+    "stock": 42,
+    "color": "black",
+    "company": "crushgear incorporated",
+    "price": 75000
+  },
+  {
+    "name": "yoyo",
+    "stock": 104,
+    "color": "green",
+    "company": "yoyo incorporated",
+    "price": 150000
+  }
+]
